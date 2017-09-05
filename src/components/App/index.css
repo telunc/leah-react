@@ -88,3 +88,7 @@ h4 {
 .footer-detail{
   color: #777777;
 }
+
+.footer-detail>a, .footer-detail>a:visited{
+  color: #bbbbbb;
+}

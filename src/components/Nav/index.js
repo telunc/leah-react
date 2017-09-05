@@ -19,9 +19,9 @@ class Nav extends Component {
 					</div>
 					<ul className={"page-nav" + (isMenuOpen ? ' active' : '')}>
 						<li><a href="https://discordapp.com/oauth2/authorize?&client_id=353429752154947594&scope=bot&permissions=305196094">Invite</a></li>
-						<li><a href="https://discord.gg/0oGyIULoUQtjbt4t">Support</a></li>
-						<li><a href="/commands">Commands</a></li>
-						<li><a href="/donate">Donate</a></li>
+						<li><a href="https://discord.gg/etpF4PB">Support</a></li>
+						<li><a href="https://github.com/telunc/leah">GitHub</a></li>
+						<li><a href="https://www.patreon.com/leahbot">Donate</a></li>
 					</ul>
 					<a className="mobileMenu" onClick={mobileMenuOnClick.bind(this)}>
 						<span className="line line-one"></span>

@@ -26,7 +26,6 @@ class App extends Component {
               <div className="col-md-7 hidden-sm hidden-xs">
                   <video preload="true" autoPlay loop className="video">
                       <source src="/video/leah.mp4" type="video/mp4" />
-                      <source src="/video/leah.webm" type="video/webm;codecs=vp8, vorbis" /> 
                       Your browser does not support the video tag
                   </video>
               </div>
@@ -62,7 +61,7 @@ class App extends Component {
             </div>
             <div className="col-md-4">
               <h3>Customizable Prefix</h3>
-              <p>Need to change default prefix? Don't worry, we got this! Leah's prefix is customizable. You can use the prefix command to change the default prefix.</p>
+              <p>Need to change default prefix? Worry not! Leah's prefix is fully customizable. You can use prefix commands to change the default prefix.</p>
             </div>
           </div>
         </div>
@@ -71,15 +70,15 @@ class App extends Component {
             <div className="row">
               <div className="col-md-4">
                 <h4>Leah</h4>
-                <p className="footer-detail">Leah is written is NodeJS.<br />Discord.js is the main library.<br />Built and maintained by Andy.</p>
+                <p className="footer-detail">Leah is written in NodeJS.<br />Discord.js is the main library.<br />Built and maintained by <a href="http://telunchen.com/">Andy</a>.</p>
               </div>
               <div className="col-md-4">
                 <h4>Contact</h4>
-                <p className="footer-detail">For any comments, concerns, or suggestions, please join our support server. The staffs will try our best to help you.</p>
+                <p className="footer-detail">For any comments, concerns, or suggestions, please join our <a href="https://discord.gg/etpF4PB">support server</a>. Our staff will try our best to help you.</p>
               </div>
               <div className="col-md-4">
                 <h4>About</h4>
-                <p className="footer-detail">Leah is a project I made for fun and put my free time to. I will be very happy if you try out the bot and send me some of your feedback.</p>
+                <p className="footer-detail">Leah is a project I made for fun and put my free time into making it better. Please feel free to try it out and give me your feedback.</p>
               </div>
             </div>
           </div>
