@@ -24,10 +24,7 @@ class App extends Component {
                   </div>
               </div>
               <div className="col-md-7 hidden-sm hidden-xs">
-                  <video preload="true" autoPlay loop className="video">
-                      <source src="/video/leah.mp4" type="video/mp4" />
-                      Your browser does not support the video tag
-                  </video>
+                  <iframe src="/video/leah.mp4" allow="autoplay" className="video"></iframe>
               </div>
             </div>
           </div>
