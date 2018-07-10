@@ -3,6 +3,26 @@ import './index.css';
 import Nav from '../Nav';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { showControl: false };
+  }
+
+  componentDidMount() {
+    let promise = document.querySelector('video').play();
+    if (promise !== undefined) {
+      promise.then(_ => {
+      // Autoplay started!
+      }).catch(error => {
+        // Autoplay was prevented.
+        // Show a "Play" button so that user can start playback.
+        this.setState({ showControl: true });
+      });
+    }
+
+  }
+
   render() {
     return (
       <div>
@@ -24,7 +44,10 @@ class App extends Component {
                   </div>
               </div>
               <div className="col-md-7 hidden-sm hidden-xs">
-                  <iframe src="/video/leah.mp4" allow="autoplay" className="video"></iframe>
+                  <video preload="true" autoPlay loop className="video" controls={this.state.showControl} preload="true">
+                      <source src="/video/leah.mp4" type="video/mp4" />
+                      Your browser does not support the video tag
+                  </video>
               </div>
             </div>
           </div>
